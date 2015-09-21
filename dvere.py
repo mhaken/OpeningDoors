@@ -19,8 +19,7 @@ if __name__ == "__main__":
     reader = device.gen_lines()
     while True:
         line = reader.next()
-        
-	if line == dvere_open:
-		device.send_command("TX ENROLL:0 PGX:0 PGY:1 ALARM:0 BEEP:NONE")
-        time.sleep(5)
-        device.send_command("TX ENROLL:0 PGX:0 PGY:0 ALARM:0 BEEP:NONE")
+        if line == dvere_open:
+            device.send_command("TX ENROLL:0 PGX:0 PGY:1 ALARM:0 BEEP:NONE")
+            time.sleep(5)
+            device.send_command("TX ENROLL:0 PGX:0 PGY:0 ALARM:0 BEEP:NONE")
