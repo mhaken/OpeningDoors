@@ -13,7 +13,7 @@ if __name__ == "__main__":
     device = Device(device="/dev/ttyUSB0")
     reader = device.gen_lines()
 
-    dvere_open="[01664712] JA-81M SENSOR LB:0 ACT:1"
+    dvere_open="[XXXXXXXX] JA-81M SENSOR LB:0 ACT:1"
 
     device = Device(device=device_name)
     reader = device.gen_lines()
